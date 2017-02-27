@@ -1,5 +1,5 @@
 @()
 
-@main("Welcome to Play") {
-  <h1>Welcome to Play!</h1>
+@main(s"Welcome to ${BuildInfo.name} ${BuildInfo.version}") {
+  <h1>Welcome to @BuildInfo.name @BuildInfo.version!</h1>
 }
