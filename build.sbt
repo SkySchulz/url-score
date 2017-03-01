@@ -32,6 +32,7 @@ TwirlKeys.templateImports += "build._"
 maintainer in Docker := "Sky Schulz <skygit@ogn.org>"
 dockerExposedPorts := Seq(9000)
 dockerBaseImage := "openjdk:8-jre"
+dockerRepository := Some("skyschulz")
 
 // BuildInfoPlugin
 buildInfoPackage := "build"

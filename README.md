@@ -5,6 +5,8 @@ A risk score of 0 is considered a safe URL. Any non-zero risk score is considere
 
 Unknown (or unregistered) URLs always have a default score of 0.
 
+[![MIT license](https://img.shields.io/badge/license-MIT%20License-blue.svg)](LICENSE)
+
 ## Features
 * GET to retrieve a URL risk score
 * POST to update a URL risk score
@@ -37,6 +39,12 @@ To build a docker instance:
 ```$ sbt docker:publishLocal```
 
 See http://www.scala-sbt.org/sbt-native-packager/formats/docker.html for details.
+
+To pull the latest image:
+
+```docker pull skyschulz/url-score```
+
+Available [tags](https://hub.docker.com/r/skyschulz/url-score/tags/).
 
 ## Planned
 * Persistent back-end to store URL scores
